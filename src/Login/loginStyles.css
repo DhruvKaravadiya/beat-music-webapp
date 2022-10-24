@@ -6,13 +6,13 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('F:\Music Web App\music-web-app\images\loginbackimg.jpg');
+    background-image: url('/images/loginbackimg.jpg');
 }
 .head-icon{
     width: 80px;
     height: 90px;
     background-repeat: no-repeat;
-    background-image: url('F:\Music Web App\music-web-app\images\Vector2.png');
+    background-image: url('/images/Vector2.png');
     background-size: 80px;
     margin-bottom: 1.5rem;
     display: block;
@@ -128,4 +128,16 @@
     height: 40px;
     background-color: rgb(255,255,255,0.5);
     border-radius: 3rem;
+}
+
+
+@media (max-width : 768px){
+
+    .login-card-body{
+        padding: 2rem 0;
+    }
+    .login-card{
+        width: 300px;
+        padding: 2rem;
+    }
 }

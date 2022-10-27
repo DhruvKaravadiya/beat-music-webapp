@@ -4,10 +4,11 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Menubar from './Menubar';
 import Login from './Login/Login';  
+import SignUp from './Sign Up/SignUp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <Login />
+    <SignUp />
   </>
 );
 

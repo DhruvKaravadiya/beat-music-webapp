@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import 'reset.css';
+.signUp-page-body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/images/loginbackimg.jpg');
+}
+.signUp-head-icon{
+    width: 70%;
+    height:  40vh;
+    position:relative;
+    background-repeat: no-repeat;
+    background-image: url('/images/Vector2.png');
+    background-size: 100% 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+.signUp-card{
+    padding: 3rem;
+    width: 60%;
+    background-color: rgb(255,255,255,0.5);
+}
+.signUp-card-left{
+    width: 50%;
+    float: left;
+}
+.signUp-card-right{
+    width:50%;
+    float: right;
+}
+.signUp-card-header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.signUp-card a{
+    text-decoration: none;
+    color: #35339a;
+}
+.signUp-card a:hover{
+    text-decoration: underline;
+}
+.signUp-card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.signUp-card-form .form-item{
+    position: relative;
+}
+.signUp-card-form .form-item .form-item-icon{
+    position: absolute;
+    top:.83rem;
+    left:1.4rem;
+    opacity: .4;
+    font-size: 1.3rem;
+}
+.signUp-card-form .checkbox{
+    display: flex;
+    align-items: center;
+    gap:7px;
+}
+.signUp-card-form .form-item-other{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+.signUp-card-footer{
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.signUp-card input[type="text"],input[type="password"],input [type="email"]{
+    border:none;
+    outline:none;
+    background-color: rgb(255,255,255,0.3);
+    padding:0.8rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    width: 100%;
+}
+.signUp-card input:focus{
+    background-color:white;
+}
+.signUp-card input[type = "checkbox"]{
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+.signUp-card-form button{
+    background-color: black;
+    color: white;
+    padding:0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signUp-card-form button:hover{
+    background-color: rgb(o,o,o,.70);
+    cursor: pointer;
+}
+.signUp-card-social{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+    text-align:center;
+    margin-top: 1.6rem;
+}
+.signUp-card-social > div{
+    opacity: .8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc(1rem * .8);
+}
+.signUp-card-social-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+}
+.signUp-card-social-btns a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 3rem;
+}
+
+
+@media (max-width : 768px){
+
+    .signUp-card-body{
+        padding: 2rem 0;
+    }
+    .signUp-card{
+        width: 300px;
+        padding: 2rem;
+    }
+}

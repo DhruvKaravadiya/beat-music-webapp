@@ -1,25 +1,54 @@
 import './sidebar.css';
-import img1 from './images/sidebarlogo.png'; 
+import beatlogo from './BeatLogoSidebar.jpg'; 
+import Create from './Create.png'; 
+import Home from './Home.png'; 
+import Library from './Library.png'; 
+import Liked from './Liked.png'; 
+import Profile from './Profile.png'; 
+import Search from './Search.png'; 
+import Setting from './Setting.png'; 
+
 export default function Sidebar(){
     return(
-        <div class = "sidebar">
+        <div class = "sidebar text-center">
             <div class = "sidebar-logo">
-                <img src={require('./images/sidebarlogo.png')} alt=""/>
+                <img src={beatlogo} alt=""/>
             </div>
 
-            <div class = "sidebar-home-icon"></div>
-            
-            <div class = "sidebar-search-icon"></div>
-            
-            <div class = "sidebar-playlist-icon"></div>
-            
-            <div class = "sidebar-create-icon"></div>
-            
-            <div class = "sidebar-liked-icon"></div>
-            
-            <div class = "sidebar-profile-icon"></div>
+            <div class = "sidebar-icons sidebar-home-icon">
+            <img src={Home} alt=""/>
 
-            <div class = "sidebar-settings-icon"></div>
+            </div>
+            
+            <div class = "sidebar-icons sidebar-search-icon">
+            <img src={Search} alt=""/>
+
+            </div>
+            
+            <div class = "sidebar-icons sidebar-library-icon">
+            <img src={Library} alt=""/>
+
+            </div>
+            
+            <div class = "sidebar-icons sidebar-create-icon">
+            <img src={Create} alt=""/>
+
+            </div>
+            
+            <div class = "sidebar-icons sidebar-liked-icon">
+            <img src={Liked} alt=""/>
+
+            </div>
+            
+            <div class = "sidebar-icons sidebar-profile-icon">
+            <img src={Profile} alt=""/>
+
+            </div>
+
+            <div class = "sidebar-icons sidebar-settings-icon">
+            <img src={Setting} alt=""/>
+
+            </div>
         </div>
     );
 }

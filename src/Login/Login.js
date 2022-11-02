@@ -1,38 +1,53 @@
-import './loginStyles.css';
+/* eslint-disable no-unused-vars */
+import "./loginStyles.css";
 export default function Login() {
   return (
     <>
       <div class="login-page-body">
         <div class="login-card">
-            <div class = "head-icon">
-            </div>
-          <p class="login-card-header "><h1>Login</h1></p>
+          <div class="head-icon"></div>
+          <p class="login-card-header ">LOGIN</p>
           <form class="login-card-form">
-            <div class="form-item ">
-              <span class="form-item-icon material-symbols-outlined">mail</span>
-              <input type="text" placeholder="Enter Email" required autoFocus />
+            <div class="login-card-inputs">
+              <input type="text" class ="mb-2" placeholder="Enter Email" required />
+              <input id="login-password-Input" class ="mb-2" type="password" placeholder="Enter Password" required />
             </div>
-            <div class="form-item ">
-              <span class="form-item-icon material-symbols-outlined">lock</span>
-              <input type="password" placeholder="Enter Password" required />
-            </div>
-            <div class="form-item-other">
-              <div class="checkbox">
-                <input type="checkbox" id="rememberMeCheckbox" />
-                <label for="rememberMeCheckBox">Remember me</label>
-              </div>
-              <a href="#">Forgot Password?</a>
+            {/* <div class="signUp-form-item ">
+                <span class="form-item-icon material-symbols-outlined">
+                  mail
+                </span>
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}"
+                  required
+                  placeholder="Enter you Email"
+                />
+              </div> */}
 
+            <div class="login-password-show-div">
+              <div class="form-item-password">
+                <input
+                  id="showpassword"
+                  type="checkbox"
+                  onclick="myFunction()"
+                />&nbsp;&nbsp;&nbsp;
+                <label for="showpassword">Show Password</label>{" "}
+              </div>
+              <div class="form-item-password">
+                <a href="">Forgot Password?</a>
+              </div>
             </div>
-            <div class="form-item ">
-              <button type="submit " class="w-50"> Sign In</button>
+
+            <div class="form-item-other ">
+              <button type="submit"> Sign In</button>
             </div>
           </form>
           <div class="login-card-footer ">
-            Don't have and account?<a href="#">Create a free account</a>
+            <a href="#">Create a free account</a>
           </div>
           <div class="login-card-social ">
-            <div>Other Sign-in platforms</div>
             <div class="login-card-social-btns">
               <a href="#">
                 <svg
@@ -94,4 +109,12 @@ export default function Login() {
       </div>
     </>
   );
+}
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
 }

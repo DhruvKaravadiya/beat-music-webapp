@@ -1,142 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import 'reset.css';
-.login-page-body{
+
+.login-page-body {
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('/images/loginbackimg.jpg');
-}
-.head-icon{
-    width: 80px;
-    height: 90px;
-    background-repeat: no-repeat;
-    background-image: url('/images/Vector2.png');
-    background-size: 80px;
-    margin-bottom: 1.5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.login-card{
     padding: 3rem;
+    height: 100vh;
+    background-image: url('/images/wall.png');
+    background-size: 100% 100%;
+
+}
+
+.login-card {
+    padding: 3rem;
+    margin-top: 2rem;
     width: 35%;
-    background-color: rgb(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    float: right;
 }
-.login-card-header{
-    text-align: center;
+
+.head-icon {
+    width: auto;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url('/images/Vectorx.png');
+    background-size: 38px;
+    position:relative;
+    background-position-x: right;
+    margin-bottom: 1.5rem;
+}
+
+.login-card-header {
+    text-align: end;
     margin-bottom: 2rem;
+    font-size: 3rem;
+    color: rgb(255, 255, 255, 0.8);
 }
-.login-card a{
+
+.login-card a {
     text-decoration: none;
     color: #35339a;
 }
-.login-card a:hover{
+
+.login-card a:hover {
     text-decoration: underline;
 }
-.login-card-form{
+
+.login-card-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
-.login-card-form .form-item{
-    position: relative;
-}
-.login-card-form .form-item .form-item-icon{
-    position: absolute;
-    top:.83rem;
-    left:1.4rem;
-    opacity: .4;
-    font-size: 1.3rem;
-}
-.login-card-form .checkbox{
-    display: flex;
-    align-items: center;
-    gap:7px;
-}
-.login-card-form .form-item-other{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: calc(1rem * .8);
-    margin-bottom: .5rem;
-}
-.login-card-footer{
-    margin-top: 1.5rem;
-    font-size: calc(1rem * .8);
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-}
-.login-card input[type="text"],input[type="password"],input [type="email"]{
-    border:none;
-    outline:none;
-    background-color: rgb(255,255,255,0.3);
-    padding:0.8rem 1.5rem;
+
+
+.login-card-inputs input[type="text"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid gray;
+
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
     padding-left: calc(1rem * 3.5);
     width: 100%;
 }
+
+.login-card-inputs input[type="password"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    padding-left: calc(1rem * 3.5);
+    width: 100%;
+}
+.login-card-inputs input::placeholder{
+    color: rgb(0,0,0, 0.8);
+}
+.form-items {
+    border: none;
+    background-color: transparent;
+}
 .login-card input:focus{
-    background-color:white;
+    transition: 0.3s;
+    outline: none !important;
+    border-bottom-color:rgb(0,0,0, 0.6);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
-.login-card input[type = "checkbox"]{
-    width: 16px;
-    height: 16px;
-    accent-color: black;
+
+
+.login-password-show-div {
+    display: flex;
+    justify-content: space-between;
 }
-.login-card-form button{
-    background-color: black;
-    color: white;
-    padding:0.5rem;
+
+.form-item-password input[type="checkbox"]{
+    
+}
+.login-card-form .form-item-password {
+    font-size: calc(1.1rem * .8);
+}
+
+.login-card-footer {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+    display: flex;
+    justify-content: end;
+}
+
+.login-card input[type="text"],
+input[type="password"] {
+    padding: 0.8rem 1.5rem;
+    text-align: end;
+    width: 100%;
+}
+
+
+
+.login-card-form button {
+    padding: 0.5rem;
+    display: flex;
+    text-align: end;
     text-transform: uppercase;
+    background-color: ;
     letter-spacing: 2px;
-    transition: background .5s;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    float: right;
+    border: none;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -ms-transition: background .5s;
+    -o-transition: background .5s;
 }
-.login-card-form button:hover{
-    background-color: rgb(o,o,o,.70);
-    cursor: pointer;
-}
-.login-card-social{
+
+.login-card-social {
     display: flex;
     flex-direction: column;
-    gap:1.5rem;
-    text-align:center;
+    gap: 1.5rem;
+    text-align: center;
     margin-top: 1.6rem;
 }
-.login-card-social > div{
-    opacity: .8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: calc(1rem * .8);
-}
-.login-card-social-btns{
+
+.login-card-social-btns {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:1rem;
+    justify-content: end;
+    gap: 1rem;
 }
-.login-card-social-btns a{
+
+.login-card-social-btns a {
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
     width: 40px;
     height: 40px;
-    background-color: rgb(255,255,255,0.5);
+    background-color: rgb(255, 255, 255, 0.5);
     border-radius: 3rem;
 }
 
 
-@media (max-width : 768px){
+@media (max-width : 768px) {
 
-    .login-card-body{
+    .login-card-body {
         padding: 2rem 0;
     }
-    .login-card{
+
+    .login-card {
         width: 300px;
         padding: 2rem;
     }

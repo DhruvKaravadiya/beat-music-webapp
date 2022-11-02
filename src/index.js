@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Menubar from './Menubar';
-import Login from './Login/Login';  
+import Login from './Login/Login';
 import SignUp from './Sign Up/SignUp';
+import Home from './HomePage/Home';
+import Sidebar from './Sidebar/Sidebar';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    <SignUp />
+    <Sidebar />
   </>
 );
 

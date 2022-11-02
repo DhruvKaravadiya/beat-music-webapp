@@ -3,35 +3,18 @@
 .signUp-page-body{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    justify-content: end;
     height: 100vh;
-    background-image: url('/images/loginbackimg.jpg');
-}
-.signUp-head-icon{
-    width: 70%;
-    height:  40vh;
-    position:relative;
     background-repeat: no-repeat;
-    background-image: url('/images/Vector2.png');
+    background-image: url('/images/wall.png');
     background-size: 100% 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4rem;
 }
+
 .signUp-card{
     padding: 3rem;
-    width: 60%;
+    width: 35%;
     background-color: rgb(255,255,255,0.5);
-}
-.signUp-card-left{
-    width: 50%;
-    float: left;
-}
-.signUp-card-right{
-    width:50%;
-    float: right;
 }
 .signUp-card-header{
     text-align: center;
@@ -49,96 +32,72 @@
     flex-direction: column;
     gap: 1.5rem;
 }
-.signUp-card-form .form-item{
+.signUp-card-form .signUp-form-item{
     position: relative;
 }
-.signUp-card-form .form-item .form-item-icon{
+.signUp-card-form .signUp-form-item .form-item-icon{
     position: absolute;
     top:.83rem;
     left:1.4rem;
-    opacity: .4;
+    opacity: .8;
     font-size: 1.3rem;
 }
-.signUp-card-form .checkbox{
-    display: flex;
-    align-items: center;
-    gap:7px;
-}
-.signUp-card-form .form-item-other{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: calc(1rem * .8);
-    margin-bottom: .5rem;
-}
+
 .signUp-card-footer{
     margin-top: 1.5rem;
     font-size: calc(1rem * .8);
     align-items: center;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
 .signUp-card input[type="text"],input[type="password"],input [type="email"]{
     border:none;
+    border-bottom: 2px solid gray;
     outline:none;
-    background-color: rgb(255,255,255,0.3);
+    color: black;
+    background-color:transparent;
     padding:0.8rem 1.5rem;
     padding-left: calc(1rem * 3.5);
     width: 100%;
 }
+.signUp-card input[type='text']::placeholder{   
+    text-align: right;      /* for Chrome, Firefox, Opera */
+}
+.signUp-card input[type="text"]:-ms-input-placeholder{ 
+    text-align: right;      /* for IE 10-11 */
+}
+.signUp-card input[type="text"]::-webkit-input-placeholder{ 
+    text-align: right;      /* for IE Edge */
+}
+
 .signUp-card input:focus{
-    background-color:white;
+    transition: 0.3s;
+    color:gray;
+    outline: none !important;
+    border-bottom-color: black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
-.signUp-card input[type = "checkbox"]{
-    width: 16px;
-    height: 16px;
-    accent-color: black;
-}
+
 .signUp-card-form button{
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: black;
+    border: none;
     padding:0.5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: background .5s;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: end;
+    float: right;
 }
 .signUp-card-form button:hover{
-    background-color: rgb(o,o,o,.70);
+    background-color: black;
+    color: white;
     cursor: pointer;
 }
-.signUp-card-social{
-    display: flex;
-    flex-direction: column;
-    gap:1.5rem;
-    text-align:center;
-    margin-top: 1.6rem;
-}
-.signUp-card-social > div{
-    opacity: .8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: calc(1rem * .8);
-}
-.signUp-card-social-btns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap:1rem;
-}
-.signUp-card-social-btns a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
-    width: 40px;
-    height: 40px;
-    background-color: rgb(255,255,255,0.5);
-    border-radius: 3rem;
-}
-
 
 @media (max-width : 768px){
 
@@ -150,3 +109,4 @@
         padding: 2rem;
     }
 }
+

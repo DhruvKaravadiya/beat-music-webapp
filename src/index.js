@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Menubar from './Menubar';
 import Login from './Login/Login';
 import SignUp from './Sign Up/SignUp';
 import Home from './HomePage/Home';

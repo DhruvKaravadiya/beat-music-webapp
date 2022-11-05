@@ -81,7 +81,7 @@ body{
     float: right;
     width:23%;
     background-color: lightblue;  
-    padding: 1.5rem;
+    padding: 1rem;
 }
 .track-photo{
     user-select: none;
@@ -99,18 +99,23 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    padding: 1rem;
+    padding: 0.8rem;
 }
 .track-name{
     font-weight: 700;
     font-size: large;
 }
+
+
+/*Slider CSS*/
 .track-progress{
     display: flex;
     flex-direction: row;
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .track-elapsed{
     font-size: small;
@@ -124,5 +129,35 @@ body{
 }
 .track-slider{
     width:100%;
-
+    background-color: #E8E8E8;
+    
+}
+.track-progress input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent; 
+    outline: none;
+    cursor: pointer;
+  }
+  
+.track-progress input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+.track-progress input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+.track-progress input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 1rem;
+    background-color: red;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }

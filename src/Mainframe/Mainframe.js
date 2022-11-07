@@ -14,7 +14,9 @@ import { IoPlaySkipBack } from "react-icons/io5";
 import { IoPlaySkipForward } from "react-icons/io5";
 import { IoPlay } from "react-icons/io5";
 //GrHomeRounded
+
 export default function Mainframe() {
+
   return (
     <>
       <div class="sidebar text-center">
@@ -100,6 +102,8 @@ export default function Mainframe() {
           </div>
         </div>
       </div>
+      
     </>
   );
+
 }

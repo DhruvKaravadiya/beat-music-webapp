@@ -71,27 +71,19 @@ export default function Mainframe() {
       </div>
       <div class="music-player-block text-center">
         <div class="player">
-          <div class="volume">
-            <ImVolumeMute2 class="volume-icon"/>
-            <input
-              class="volume-bar"
-              type="range"
-              min="1"
-              max="100"
-              value="0"
-            />
+          <div class="volume-container">
+            <div class="volume-icon"></div>
+            <div class="volume-slider">
+              <input type="range" min="0" max="100"/>
+              <progress min="0" max="100" value="50"></progress>
+            </div>
           </div>
           <div class="track-frame">
             <div class="track-photo"></div>
             <span class="track-name">Till I Collapse</span>
             <div class="track-progress">
               <span class="track-elapsed">00:00</span>
-              <input
-                class="track-slider"
-                type="range"
-                min="0"
-                max="100"
-              />
+              <input class="track-slider" type="range" min="0" max="100" />
               <span class="track-length">11:11</span>
             </div>
             <div class="track-play-control">

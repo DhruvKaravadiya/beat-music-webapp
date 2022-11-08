@@ -1,16 +1,101 @@
 import React from "react";
 import styled from "styled-components";
-function VolumeSlider(){
-    return(
-        <><SliderComponentCSS><div>SliderComponent</div></SliderComponentCSS>
-            
-          
-        </>
-    );
+import { ImVolumeLow } from "react-icons/im";
+import { ImVolumeMedium } from "react-icons/im";
+import { ImVolumeHigh } from "react-icons/im";
+import { ImVolumeMute2 } from "react-icons/im";
+export default function VolumeSlider({ value, handleChange, min, max, step }) {
+  return (
+    <>
+        <SliderContainer class="volume-slider-container">
+        <SpanTag>{value > 0 && value <= 33 && <ImVolumeLow class = "volume-value-icon"/>}</SpanTag>
+          <SpanTag>{value > 33 && value <= 66 && <ImVolumeMedium class = "volume-value-icon"/>}</SpanTag>
+          <SpanTag>{value > 66 && <ImVolumeHigh class = "volume-value-icon"/>}</SpanTag>
+          <SpanTag>{value === 0 && <ImVolumeMute2 class = "volume-value-icon"/>}</SpanTag>
+          <Slider
+            class="volume-slider"
+            type="range"
+            defaultValue={value}
+            onChange={handleChange}
+            min={min}
+            max={max}
+            step={step}
+          />
+          <ProgressBar min={min} max={max} step={step} value={value}/>
+        </SliderContainer>
+    </>
+  );
 }
 
-export default VolumeSlider;
 
-const SliderComponentCSS=styled.div`
-background-color:red;
+const SpanTag = styled.span`
+float:left;
+width:20px;
+height: auto;
+position: relative;
+background-color:blue;
+`
+const SliderContainer = styled.div`  
+  width: 100%;
+  height: 40px;
+  display:flex;
+  top:50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  background-color:yellow;
 `;
+const Slider = styled.input`
+  position:absolute;
+  -webkit-appearance:none;
+  height:3.5px;
+  width:50%;
+  -webkit-transition:0.2s;
+  transition:opacity 0.2s;
+  background-color:transparent;
+  outline:none;
+  border:0;
+  z-index:9;  
+  
+  ::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    height:7px;
+    width:7px;
+    border-radius:15px;
+    background-color:transparent;
+    outline:none;
+    border:0;
+    cursor:pointer;
+  }
+  ::-webkit-slider-thumb:hover{
+    background-color:orangered;
+  }
+  ::moz-rage-thumb{
+    height:7px;
+    width:7px;
+    border-radius:15px;
+    background-color:transparent;
+    outline:none;
+    border:0;
+    cursor:pointer;
+  }
+  ::moz-rage-thumb:hover{
+    background-color:orangered;
+  }
+`
+  const ProgressBar = styled.progress`
+  -webkit-appearance:none;
+  width:50%;
+  height: 3.5px;
+  background-color: #21222C;
+  overflow: hidden;
+  position:absolute;
+
+  ::-webkit-progress-bar{
+    background-color: #D9D9D9;
+}
+  ::-webkit-progress-value{
+    background-color: #21222C;
+}
+`

@@ -6,15 +6,15 @@ import { MdAddBox } from "react-icons/md";
 import { AiFillHeart } from "react-icons/ai";
 import { IoPersonCircle } from "react-icons/io5";
 import { RiSettings5Fill } from "react-icons/ri";
+import { IoPlaySkipBack } from "react-icons/io5";
+import { IoPlaySkipForward } from "react-icons/io5";
+import { IoPlay } from "react-icons/io5";
+import styled from "styled-components";
 import { ImVolumeLow } from "react-icons/im";
 import { ImVolumeMedium } from "react-icons/im";
 import { ImVolumeHigh } from "react-icons/im";
 import { ImVolumeMute2 } from "react-icons/im";
-import { IoPlaySkipBack } from "react-icons/io5";
-import { IoPlaySkipForward } from "react-icons/io5";
-import { IoPlay } from "react-icons/io5";
-//GrHomeRounded
-
+import  VolumeSlider  from "../VolumeSlider/VolumeSlider";
 export default function Mainframe() {
 
   return (
@@ -74,11 +74,7 @@ export default function Mainframe() {
       <div class="music-player-block text-center">
         <div class="player">
           <div class="volume-container">
-            <div class="volume-icon"></div>
-            <div class="volume-slider">
-              <input type="range" min="0" max="100"/>
-              <progress min="0" max="100" value="50"></progress>
-            </div>
+           <VolumeSlider />
           </div>
           <div class="track-frame">
             <div class="track-photo"></div>

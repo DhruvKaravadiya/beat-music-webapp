@@ -8,7 +8,6 @@ export default function App() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
-
   return (
     <>
       

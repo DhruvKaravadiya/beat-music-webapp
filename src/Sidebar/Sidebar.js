@@ -1,4 +1,4 @@
-import "./mainframe.css";
+import "./Sidebar.css";
 import { RiHome2Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { RiFolderMusicFill } from "react-icons/ri";
@@ -59,7 +59,7 @@ export default function Mainframe() {
 
             <div class="sidebar-icons">
               <AiFillHeart class="sidebar-liked sidebar-icon-animation sidebar-icon-size" />
-            </div>
+             </div>
           </div>
           <div class="sidebar-group-3">
             <div class="sidebar-icons">

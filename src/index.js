@@ -6,7 +6,7 @@ import styled from "styled-components";
 import Login from "./Login/Login";
 import SignUp from "./Sign Up/SignUp";
 import Home from "./HomePage/Home";
-import Mainframe from "./Mainframe/Mainframe";
+import Sidebar from "./Sidebar/Sidebar";
 import VolumeSlider from "./VolumeSlider/VolumeSlider";
 import App from "./App";
 const root = ReactDOM.createRoot(document.getElementById("root"));

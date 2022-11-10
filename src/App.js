@@ -10,7 +10,6 @@ export default function App() {
   };
   return (
     <>
-      
       <VolumeSlider
         value={value}
         handleChange={handleChange}

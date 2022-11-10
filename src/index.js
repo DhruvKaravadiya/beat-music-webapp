@@ -9,6 +9,8 @@ import Home from "./HomePage/Home";
 import Sidebar from "./Sidebar/Sidebar";
 import VolumeSlider from "./VolumeSlider/VolumeSlider";
 import App from "./App";
+import Mainframe from "./Sidebar/Sidebar";
+import Player from "./Player/Player";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>

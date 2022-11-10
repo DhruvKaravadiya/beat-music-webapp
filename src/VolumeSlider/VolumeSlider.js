@@ -7,11 +7,13 @@ import { ImVolumeMute2 } from "react-icons/im";
 export default function VolumeSlider({ value, handleChange, min, max, step }) {
   return (
     <>
+      <SpanTag>
+      {value > 0 && value <= 33 && <ImVolumeLow class = "volume-value-icon"/>}
+          {value > 33 && value <= 66 && <ImVolumeMedium class = "volume-value-icon"/>}
+          {value > 66 && <ImVolumeHigh class = "volume-value-icon"/>}
+          {value == 0 && <ImVolumeMute2 class = "volume-value-icon"/>}</SpanTag>
         <SliderContainer class="volume-slider-container">
-        <SpanTag>{value > 0 && value <= 33 && <ImVolumeLow class = "volume-value-icon"/>}</SpanTag>
-          <SpanTag>{value > 33 && value <= 66 && <ImVolumeMedium class = "volume-value-icon"/>}</SpanTag>
-          <SpanTag>{value > 66 && <ImVolumeHigh class = "volume-value-icon"/>}</SpanTag>
-          <SpanTag>{value === 0 && <ImVolumeMute2 class = "volume-value-icon"/>}</SpanTag>
+          
           <Slider
             class="volume-slider"
             type="range"
@@ -22,6 +24,7 @@ export default function VolumeSlider({ value, handleChange, min, max, step }) {
             step={step}
           />
           <ProgressBar min={min} max={max} step={step} value={value}/>
+     
         </SliderContainer>
     </>
   );
@@ -29,26 +32,27 @@ export default function VolumeSlider({ value, handleChange, min, max, step }) {
 
 
 const SpanTag = styled.span`
-float:left;
 width:20px;
-height: auto;
-position: relative;
+height: 20px;
 background-color:blue;
+position: absolute;
+z-index:2;
 `
 const SliderContainer = styled.div`  
-  width: 100%;
+  width: 70%;
   height: 40px;
   display:flex;
   top:50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position:relative;
   background-color:yellow;
-`;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: center;
+  `;
 const Slider = styled.input`
-  position:absolute;
   -webkit-appearance:none;
+  position:absolute;
   height:3.5px;
   width:50%;
   -webkit-transition:0.2s;

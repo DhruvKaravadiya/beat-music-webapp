@@ -15,7 +15,7 @@ import { ImVolumeMedium } from "react-icons/im";
 import { ImVolumeHigh } from "react-icons/im";
 import { ImVolumeMute2 } from "react-icons/im";
 import  VolumeSlider  from "../VolumeSlider/VolumeSlider";
-export default function Mainframe() {
+export default function Sidebar() {
 
   return (
     <>
@@ -71,34 +71,6 @@ export default function Mainframe() {
           </div>
         </div>
       </div>
-      <div class="music-player-block text-center">
-        <div class="player">
-          <div class="volume-container">
-           <VolumeSlider />
-          </div>
-          <div class="track-frame">
-            <div class="track-photo"></div>
-            <span class="track-name">Till I Collapse</span>
-            <div class="track-progress">
-              <span class="track-elapsed">00:00</span>
-              <input class="track-slider" type="range" min="0" max="100" />
-              <span class="track-length">11:11</span>
-            </div>
-            <div class="track-play-control">
-              <span class="play-previous">
-                <IoPlaySkipBack />
-              </span>
-              <span class="play-stop">
-                <IoPlay />
-              </span>
-              <span class="play-next">
-                <IoPlaySkipForward />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
     </>
   );
 

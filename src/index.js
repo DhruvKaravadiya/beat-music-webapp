@@ -2,15 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import styled from "styled-components";
-import Login from "./Login/Login";
-import SignUp from "./Sign Up/SignUp";
-import Home from "./HomePage/Home";
-import Sidebar from "./Sidebar/Sidebar";
-import VolumeSlider from "./VolumeSlider/VolumeSlider";
+
 import App from "./App";
-import Mainframe from "./Sidebar/Sidebar";
-import Player from "./Player/Player";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>

@@ -25,7 +25,7 @@ export default function Player() {
               min={0}
               max={100}
               step={1}
-            />
+            ></VolumeSlider>
           </div>
           <div class="track-frame">
             <div class="track-photo"></div>

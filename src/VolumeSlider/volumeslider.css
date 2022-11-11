@@ -1,7 +1,13 @@
-.volume-value-icon {
-    width: 15px;
-    height: 15px;
-    float: left;
+
+/*whole div of volume slider*/
+.player-volume-block {
+    display: block;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 .volume-slider-container {
@@ -17,7 +23,14 @@
     float: right;
 }
 
+/* Volume Icon*/
+.volume-value-icon {
+    width: 15px;
+    height: 15px;
+    float: left;
+}
 
+/*Input type = range*/
 .volume-slider {
     -webkit-appearance: none;
     position: absolute;
@@ -58,6 +71,7 @@
     background-color: #21222C;
 }
 
+/*  Firefox  */
 .volume-slider ::moz-rage-thumb {
     height: 8px;
     width: 8px;
@@ -72,6 +86,7 @@
     background-color: #21222C;
 }
 
+/*  Progress bar for volume  */
 .volume-slider-progress {
     -webkit-appearance: none;
     width: 60%;
@@ -79,22 +94,17 @@
     background-color: #21222C;
     overflow: hidden;
     position: absolute;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .volume-slider-progress::-webkit-progress-bar {
-    background-color: #D9D9D9;
+    background-color: #E8E8E8;
 }
 
 .volume-slider-progress::-webkit-progress-value {
     background-color: #21222C;
-}
-
-.player-volume-block {
-    display: block;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
 }

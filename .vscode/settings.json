@@ -1,6 +1,14 @@
 {
     "cSpell.words": [
+        "btns",
         "homebtnid",
-        "sidebarlogo"
+        "playstop",
+        "settrackvalue",
+        "sidebarlogo",
+        "trackevent",
+        "trackmax",
+        "trackmin",
+        "trackstep",
+        "trackvalue"
     ]
 }

@@ -6,33 +6,42 @@ import { GiPauseButton } from "react-icons/gi";
 import VolumeSlider from "../VolumeSlider/VolumeSlider";
 import "./player.css";
 import { useState } from "react";
+import TrackSlider from "./TrackSlider";
 export default function Player() {
-  const [value, setValue] = useState(50);
+  const [volValue, setVolValue] = useState(50);
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
+  const handleVolChange = (event) => {
+    setVolValue(event.target.value);
   };
+
+  const [trackvalue, settrackvalue] = useState(60);
+  const handletrackchange = (trackevent) => {
+    settrackvalue(trackevent.target.value);
+  }
   return (
     <>
       <div class="music-player-block text-center">
         <div class="player">
           <div class="volume-container">
             <VolumeSlider
-              value={value}
-              handleChange={handleChange}
+              value={volValue}
+              handleChange={handleVolChange}
               min={0}
               max={100}
               step={1}
-            ></VolumeSlider>
+            />
           </div>
           <div class="track-frame">
             <div class="track-photo"></div>
             <span class="track-name">Till I Collapse</span>
               <div class="track-slider">
-                <input class="track-slider" type="range" min="0" max="100" />
-                <progress class="track-progress" min="0" max="100" value="50"></progress>
-              
-              
+               <TrackSlider
+                 value="30"
+                 handleChange = ""
+                 min = {0}
+                 max = {100}
+                 step= {1}
+                />
             </div>
             <span class="track-elapsed">00:00</span>
               <span class="track-length">11:11</span>

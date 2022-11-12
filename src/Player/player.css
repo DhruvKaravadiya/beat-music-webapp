@@ -15,7 +15,6 @@
     background-image: url('Eminem.png');
     background-repeat: no-repeat;
     background-size: 260px 260px;
-    display: flex;
     /*Top - Left - Bottom - Right*/
     margin:1rem auto 1rem auto;
 }
@@ -36,9 +35,7 @@
     font-weight: 500;
     margin-left: 2px;
 }
-.track-slider{
-    width:100%;
-}
+
 .volume-bar{
     position: absolute;
     z-index:1;
@@ -48,39 +45,7 @@
     height: 4px;
     background-color: red;
 }
-.track-slider input[type=range] {
-    position: relative;
-    -webkit-appearance: none;
-    z-index: 10;
-    height: 4px;
-    width: 100%;
-    background: white;
-    outline: none;
-    border-radius: 15px;
-    -webkit-border-radius:15px;
-    -moz-border-radius: 15px;
-     -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    -webkit-border-radius: 15px;
-}
-.track-slider input::-webkit-slider-thumb{
-    appearance: none;
-    width: 10px;
-    height: 10px;
-    background-color: orangered;
-    border-radius: 1rem;
-    outline: none;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    -webkit-border-radius: 1rem;
-    -moz-border-radius: 1rem;
-    -ms-border-radius: 1rem;
-    -o-border-radius: 1rem;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
+
 
 /*  Play buttons CSS  */
 .play-icon{
@@ -92,26 +57,3 @@
     padding: 0.55rem;
 }
 
-/*  Track-progress bar  */
-.track-progress{
-    -webkit-appearance:none;
-    width: 100%;
-    height: 4px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    overflow: hidden;
-    background-color: #21222C;
-}
-.track-progress::-webkit-progress-bar{
-    background-color: #E8E8E8;
-}
-.track-progress::-webkit-progress-value{
-    background-color: #21222C;
-}
-
-.track-progress::-webkit-progress-value:hover{
-    background-color: orangered;
-}

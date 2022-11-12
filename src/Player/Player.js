@@ -36,8 +36,8 @@ export default function Player() {
             <span class="track-name">Till I Collapse</span>
               <div class="track-slider">
                <TrackSlider
-                 value="30"
-                 handleChange = ""
+                 value={trackvalue}
+                 handleChange = {handletrackchange}
                  min = {0}
                  max = {100}
                  step= {1}
@@ -62,3 +62,5 @@ export default function Player() {
     </>
   );
 }
+
+

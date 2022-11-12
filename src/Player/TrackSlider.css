@@ -1,0 +1,12 @@
+.track-slider-container{
+    position: relative;
+    width:100%;
+    height: fit-content;
+}
+.track-slider{
+    position: absolute;
+    -webkit-appearance:none;
+}
+.track-progress{
+    position: absolute;
+}

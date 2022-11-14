@@ -11,7 +11,7 @@ export default function TrackSlider(
     <>
     <div class = "track-slider-container">
       <input
-        class="track-sliders"
+        class="track-slider"
         type="range"
         defaultValue={trackvalue}
         onChange={handletrackchange}
@@ -19,10 +19,10 @@ export default function TrackSlider(
         max={trackmax}
         step={trackstep}
       />
-      <progress class="track-progresss" 
-        value="50"
-        min="0"
-        max="100"
+      <progress class="track-progress" 
+        value={trackvalue}
+        min={trackmin}
+        max={trackmax}
         step={trackstep}>
         </progress>
         </div>

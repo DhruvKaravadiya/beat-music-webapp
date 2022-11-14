@@ -14,7 +14,7 @@ export default function Player() {
     setVolValue(event.target.value);
   };
 
-  const [trackvalue, settrackvalue] = useState(60);
+  const [trackvalue, settrackvalue] = useState(50);
   const handletrackchange = (trackevent) => {
     settrackvalue(trackevent.target.value);
   }

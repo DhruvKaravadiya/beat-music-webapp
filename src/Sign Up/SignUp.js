@@ -4,21 +4,13 @@ export default function signUp() {
     <>
       <div class="signUp-page-body">
         <div class="signUp-card">
+          <div class ="sig"></div>
           <p class="signUp-card-header ">
-            <h1>signUp</h1>
+            <h1>SIGN UP</h1>
           </p>
 
           <form class="signUp-card-form">
-            <div class="signUp-form-item ">
-              
-              <input
-                type="text"
-                placeholder="Enter Full Name"
-                pattern
-                title="Username must contain alphabets and number"
-                required
-              />
-            </div>
+           
             <div class="signUp-form-item ">
              
               <input

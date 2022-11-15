@@ -40,14 +40,14 @@ export default function signUp() {
               <input type="password" placeholder="Confirm Password" required />
             </div>
             <div class="signUp-form-item ">
-              <button type="submit " class="w-25">
+              <button type="submit " >
                 {" "}
                 Sign Up
               </button>
             </div>
           </form>
           <div class="signUp-card-footer ">
-            Already have and account?<a href="#">Login</a>
+            Already have and account?<a>Login</a>
           </div>
         </div>
       </div>

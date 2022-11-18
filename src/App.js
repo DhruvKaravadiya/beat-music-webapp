@@ -6,10 +6,10 @@ import SignUp from './Sign Up/SignUp';
 import styled from "styled-components";
 import Player2 from "./SongPlayer/Player";
 export default function App() {
-  
+
   return (
     <>
-    <Player2 />
+    <Player2/>
     </>
   );
 }

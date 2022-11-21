@@ -5,14 +5,13 @@ import TrackSlider from "./Player/TrackSlider";
 import SignUp from './Sign Up/SignUp';
 import styled from "styled-components";
 import Player from "./SongPlayer/Player";
+import Front from './Front/Front';
 export default function App() {
 
   return (
     <>
-    <Body>
-    <Sidebar />
-    <Player />
-    </Body>
+
+    <Front />
     </>
   );
 }

@@ -58,7 +58,7 @@ function loadTrack(track_index) {
   updateTimer = setInterval(setUpdate, 1000);
   curr_track.addEventListener("ended", nextTrack);
 }
-
+export {loadTrack};
 function reset() {
   track_elapsed.textContent = "00:00";
   track_length.textContent = "00:00";

@@ -209,3 +209,13 @@ body{
 .volume-slider-block progress::-webkit-progress-value{
     background-color: #F67341;
 }
+
+/*Playlist CSS*/
+.playlist-block{
+    float: left;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position:absolute;
+}
+

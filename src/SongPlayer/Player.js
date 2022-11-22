@@ -41,6 +41,7 @@ export default function Player() {
 
   return (
     <>
+    <div class = "player-plalist-block">
       <div class="player-container">
         <div class="first-block">
           <div class="like-icon">
@@ -52,7 +53,7 @@ export default function Player() {
               viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              onChange={window['likeToggler']}
+
             >
               <path
                 d="M21.568 10.2447L21.5026 10.3168L21.4721 10.3672L15.334 16.6162C13.5212 18.4613 10.4788 18.4612 8.66672 16.6163L8.66667 16.6163L2.5279 10.3672L2.4975 10.3169L2.43218 10.2449C1.53776 9.25985 1 7.97374 1 6.56951C1 3.52002 3.55069 1 6.75565 1C8.56901 1 10.1803 1.80992 11.2328 3.0699L12.0003 3.98859L12.7677 3.0699C13.8203 1.80988 15.431 1 17.2449 1C20.4493 1 23 3.51996 23 6.56951C23 7.97447 22.4627 9.25988 21.568 10.2447Z"
@@ -79,28 +80,28 @@ export default function Player() {
               min={0}
               max={3.2}
               step={0.01}
-              onChange={window['seekTo']}
+             
             />
           </div>
         </div>
         <div class="track-control">
           <div class="track-icons">
-            <div class="track-control-icon track-download" onClick={window['playpauseTrack']}>
+            <div class="track-control-icon track-download" >
               <HiOutlineDownload />
             </div>
-            <div class="track-control-icon track-prev" onClick={window['previousTrack']}>
+            <div class="track-control-icon track-prev" >
               <BsSkipBackwardFill />
             </div>
 
             <div
-              class="track-control-icon track-play-pause" onClick={window['playpauseTrack']}
+              class="track-control-icon track-play-pause"
             >
               <BsPlayFill />
             </div>
-            <div class="track-control-icon track-next" onClick={window['nextTrack']}>
+            <div class="track-control-icon track-next" >
               <BsSkipForwardFill />
             </div>
-            <div class="track-control-icon track-repeat" onClick={window['repeatTrack']}>
+            <div class="track-control-icon track-repeat" >
               <TbRepeat />
             </div>
           </div>
@@ -121,9 +122,15 @@ export default function Player() {
             min={0}
             max={100}
             step={1}
-            onChange={window['setVolume']}
           />
         </div>
+      </div>
+      <div class = "playlist-block">
+        <div class = "playlist-header">@Playlist</div>
+        <div class = "playlist">
+            <div class=""></div>
+        </div>
+      </div>
       </div>
     </>
   );

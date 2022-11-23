@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar/Sidebar";
 import Login from "./Login/Login"
-import TrackSlider from "./Player/TrackSlider";
 import SignUp from './Sign Up/SignUp';
 import styled from "styled-components";
 import Player from "./SongPlayer/Player";
@@ -11,12 +10,9 @@ export default function App() {
 
   return (
     <>
-<Body><Sidebar/>
-    <Player />
-    </Body>    </>
+      <Player/>
+
+    </>
   );
 }
 
-const Body = styled.div`
-  padding:1.5rem;
-`

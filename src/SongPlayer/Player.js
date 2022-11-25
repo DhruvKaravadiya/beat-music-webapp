@@ -46,9 +46,9 @@ export default function Player() {
               <svg
                 id="liked"
                 class="liked edit1 edit2"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
+                width="24"
+                height="19"
+                viewBox="0 0 24 19"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -63,8 +63,9 @@ export default function Player() {
             <div class="track-image">
               <img src={Eminem} class="image" alt="" />
             </div>
+            <div class = "track-name-wrapper">
             <span class="track-name">Till I Collapse</span>
-            <span class="track-artist ">Eminem</span>
+            <span class="track-artist ">Eminem</span></div>
             <div class="track-slider-block">
               <div class="track-time">
                 <span class="track-elapsed">{trackvalue}</span>
@@ -82,21 +83,21 @@ export default function Player() {
           </div>
           <div class="track-control">
             <div class="track-icons">
-              <div class="track-control-icon track-download">
-                <HiOutlineDownload />
+              <div class=" track-download">
+                <HiOutlineDownload class="track-control-icon"/>
               </div>
-              <div class="track-control-icon track-prev">
-                <BsSkipBackwardFill />
+              <div class=" track-prev">
+                <BsSkipBackwardFill class="track-control-icon"/>
               </div>
 
-              <div class="track-control-icon track-play-pause">
-                <BsPlayFill />
+              <div class=" track-play-pause">
+                <BsPlayFill class="track-control-icon"/>
               </div>
-              <div class="track-control-icon track-next">
-                <BsSkipForwardFill />
+              <div class=" track-next">
+                <BsSkipForwardFill class="track-control-icon"/>
               </div>
-              <div class="track-control-icon track-repeat">
-                <TbRepeat />
+              <div class=" track-repeat">
+                <TbRepeat class="track-control-icon" />
               </div>
             </div>
           </div>

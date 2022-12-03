@@ -31,7 +31,6 @@
 }
 
 
-
 .sidebar-group-3{
     padding: 1rem;
 }
@@ -39,7 +38,11 @@
     width: 18px;
     height: 18px;
     margin-bottom: 2rem;
-
+    cursor: pointer;
+    fill: aliceblue;
+}
+.sidebar-icons:focus{
+    fill: #F67341;
 }
 .sidebar-library{
     margin-bottom: 5rem;

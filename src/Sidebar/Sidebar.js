@@ -1,4 +1,5 @@
 import "./Sidebar.css";
+import { useState } from "react";
 import { RiHome2Fill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { RiFolderMusicFill } from "react-icons/ri";
@@ -7,6 +8,12 @@ import { AiFillHeart } from "react-icons/ai";
 import { IoPersonCircle } from "react-icons/io5";
 import { RiSettings5Fill } from "react-icons/ri";
 export default function Sidebar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    
+    setIsActive(current => !current);
+  }
   return (
     <>
       <div class="sidebar text-center">
@@ -23,39 +30,68 @@ export default function Sidebar() {
         </div>
         <div class="sidebar-icon-groups">
           <div class="sidebar-group-1">
-            <RiHome2Fill
-              fill="white"
+            <RiHome2Fill 
+            
+            style={{
+              fill: isActive ? 'salmon' : 'white',
+              color: isActive ? 'white' : 'salmon',
+            }}
+            onClick={handleClick}
               class="sidebar-home sidebar-icons"
             />
 
             <FaSearch
-              fill="white"
-              class="sidebar-search sidebar-icons"
+               style={{
+                fill: isActive ? 'salmon' : 'white',
+                color: isActive ? 'white' : 'salmon',
+              }}
+              onClick={handleClick}
+              class="sidebar-search  sidebar-icons"
             />
 
             <RiFolderMusicFill
-              fill="white"
+               style={{
+                fill: isActive ? 'salmon' : 'white',
+                color: isActive ? 'white' : 'salmon',
+              }}
+              onClick={handleClick}
               class="sidebar-library sidebar-icons"
             />
 
             <MdAddBox
-              fill="white"
+              style={{
+                fill: isActive ? 'salmon' : 'white',
+                color: isActive ? 'white' : 'salmon',
+              }}
+              onClick={handleClick}
               class="sidebar-create sidebar-icons"
             />
 
             <AiFillHeart
-              fill="white"
+               style={{
+                fill: isActive ? 'salmon' : 'white',
+                color: isActive ? 'white' : 'salmon',
+              }}
+              onClick={handleClick}
               class="sidebar-liked sidebar-icons"
             />
           </div>
             <div class="sidebar-group-3">
               <IoPersonCircle
-                fill="white"
+                 style={{
+                  fill: isActive ? 'salmon' : 'white',
+                  color: isActive ? 'white' : 'salmon',
+                }}
+                onClick={handleClick}
                 class="sidebar-profile sidebar-icons"
               />
 
               <RiSettings5Fill
-                fill="white"
+                  style={{
+                    fill: isActive ? 'salmon' : 'white',
+                    color: isActive ? 'white' : 'salmon',
+                  }}
+                onClick={handleClick}
                 class="sidebar-settings sidebar-icons"
               />
             </div>

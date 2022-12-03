@@ -6,12 +6,13 @@ import styled from "styled-components";
 import Player from "./SongPlayer/Player";
 import Front from './Front/Front';
 import Playlist from "./SongPlayer/Playlist";
+import Test from "./Text";
 export default function App() {
 
   return (
     <>
+    <Sidebar/>
       <Player/>
-
     </>
   );
 }

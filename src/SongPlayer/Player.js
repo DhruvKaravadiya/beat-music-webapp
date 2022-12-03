@@ -24,7 +24,7 @@ import {
 import Eminem from "./Eminem.png";
 import VolumeSlider from "./VolumeSlider";
 import TrackSlider from "./TrackSlider";
-
+import photo from "./playlist.jpg";
 export default function Player() {
   const [volumeValue, setVolumeValue] = useState(50);
 
@@ -45,7 +45,7 @@ export default function Player() {
             <div class="like-icon">
               <svg
                 id="liked"
-                class="liked edit1 edit2"
+                class="liked"
                 width="24"
                 height="19"
                 viewBox="0 0 24 19"
@@ -63,9 +63,10 @@ export default function Player() {
             <div class="track-image">
               <img src={Eminem} class="image" alt="" />
             </div>
-            <div class = "track-name-wrapper">
-            <span class="track-name">Till I Collapse</span>
-            <span class="track-artist ">Eminem</span></div>
+            <div class="track-name-wrapper">
+              <span class="track-name">Till I Collapse</span>
+              <span class="track-artist ">Eminem</span>
+            </div>
             <div class="track-slider-block">
               <div class="track-time">
                 <span class="track-elapsed">{trackvalue}</span>
@@ -84,17 +85,17 @@ export default function Player() {
           <div class="track-control">
             <div class="track-icons">
               <div class=" track-download">
-                <HiOutlineDownload class="track-control-icon"/>
+                <HiOutlineDownload class="track-control-icon" />
               </div>
               <div class=" track-prev">
-                <BsSkipBackwardFill class="track-control-icon"/>
+                <BsSkipBackwardFill class="track-control-icon" />
               </div>
 
               <div class=" track-play-pause">
-                <BsPlayFill class="track-control-icon"/>
+                <BsPlayFill class="track-control-icon" />
               </div>
               <div class=" track-next">
-                <BsSkipForwardFill class="track-control-icon"/>
+                <BsSkipForwardFill class="track-control-icon" />
               </div>
               <div class=" track-repeat">
                 <TbRepeat class="track-control-icon" />
@@ -120,20 +121,23 @@ export default function Player() {
             />
           </div>
         </div>
-        {/* <div class="playlist-container">
-          <div class="playlist-header">@Playlist</div>
-          <div class="playlist">
-            <div class="list-item">
-              <img src="https://i.pinimg.com/736x/20/5e/fa/205efac2bb2a9923c3d167bba481b102.jpg" alt="" />
-              <span class = "playlist-song-name">Song Name</span>
+        <div class="playlist-container">
+          <span class="playlist-name">@Playlist</span>
+          <div class="playlist-tracks">
+            <div class="song1">
+              <img src={photo} alt="" />
+              <span>Song name</span>
             </div>
-            <div class="list-item">
-              <img src="https://i.pinimg.com/736x/20/5e/fa/205efac2bb2a9923c3d167bba481b102.jpg" alt="" />
-              <span class = "playlist-song-name">Song Name</span>
+            <div class="song1">
+              <img src={photo} alt="" />
+              <span>Song name</span>
             </div>
-            
+            <div class="song1">
+              <img src={photo} alt="" />
+              <span>Song name</span>
+            </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,46 @@
+.sidebar{
+    position: absolute;
+    width: 65px;
+    height: 100%;
+    background-color: #2E3034;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar-logo{
+    background-color: #F67341;
+    padding: 0.7rem;
+
+}
+.sidebar-logo svg{
+    fill:  #222327;
+}
+
+.sidebar-group-1{
+    position: absolute;
+    display: flex;
+    width: 65px;
+    top: 70px;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+
+}
+.sidebar-icons{
+    width: 20px;
+    height: 20px;
+    fill: aliceblue;
+    cursor: pointer;
+}
+.sidebar-group-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+
+}
+.sidebar-create{
+    margin-top: 3rem;
+}

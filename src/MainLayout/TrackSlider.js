@@ -1,9 +1,9 @@
 import React from "react";
-import "./Player.css";
-export default function VolumeSlider({ value, handleChange, min, max, step }) {
+import "./Layout.css";
+export default function TrackSlider({ value, handleChange, min, max, step }) {
   return (
     <>
-      <div class="volume-slider-block">
+      <div class="track-slider">
         <input
           type="range"
           defaultValue={value}

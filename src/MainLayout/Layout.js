@@ -33,6 +33,8 @@ import Eminem from "./Eminem.png";
 import VolumeSlider from "./VolumeSlider";
 import TrackSlider from "./TrackSlider";
 import photo from "./playlist.jpg";
+import Home from "../SidebarPages/Home";
+import Search from "../SidebarPages/Search";
 export default function Layout() {
   const [volumeValue, setVolumeValue] = useState(50);
 
@@ -60,8 +62,9 @@ export default function Layout() {
         </div>
 
         <div class="sidebar-group-1 ">
-          <RiHome2Fill class="sidebar-home sidebar-icons" />
-          <FaSearch class="sidebar-search  sidebar-icons" />
+         
+          <RiHome2Fill class="sidebar-home sidebar-icons" href="/"/>
+          <FaSearch class="sidebar-search  sidebar-icons" href="/index/search"/>
           <RiFolderMusicFill class="sidebar-library sidebar-icons" />
           <MdAddBox class="sidebar-create sidebar-icons" />{" "}
           <AiFillHeart class="sidebar-liked sidebar-icons" />
@@ -96,7 +99,7 @@ export default function Layout() {
                 />
               </svg>
             </div>
-            <div class="track-image">
+            <div class="track-image text-center">
               <img src={Eminem}  alt="" />
             </div>
             <div class="track-name-wrapper text-center">

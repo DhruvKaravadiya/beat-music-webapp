@@ -4,21 +4,21 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // import Sidebar from "./Sidebar/Sidebar";
 // import Player from "./SongPlayer/Player";
-// import Account from "./SidebarPages/Account";
-// import Liked from "./SidebarPages/Liked";
-// import Create from "./SidebarPages/Create";
-// import Home from "./SidebarPages/Home";
-// import Library from "./SidebarPages/Library";
-// import Search from "./SidebarPages/Search";
-// import Settings from "./SidebarPages/Settings";
-import Layout from "./MainLayout/Layout";
-// import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
+import Layout from "./MainLayout/Layout"
+import Account from "./SidebarPages/Account";
+import Liked from "./SidebarPages/Liked";
+import Create from "./SidebarPages/Create";
+import Home from "./SidebarPages/Home";
+import Library from "./SidebarPages/Library";
+import Search from "./SidebarPages/Search";
+import Settings from "./SidebarPages/Settings";
+
+import { BrowserRouter, Link, Outlet, Route, Routes } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
   <Layout />
-    {/* <BrowserRouter>
-      <Sidebar/>
+    <BrowserRouter>
       <Routes>
         <Route index path="/" element={<Home />} />
         <Route path="index/search" element={<Search />} />
@@ -29,7 +29,6 @@ root.render(
         <Route path="index/settings" element={<Settings />} />
       </Routes>
     </BrowserRouter>
-    <Player  class="i-player"/> */}
     
   </>
 );

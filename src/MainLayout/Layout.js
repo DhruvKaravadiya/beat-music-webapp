@@ -10,7 +10,6 @@ import { RiSettings5Fill } from "react-icons/ri";
 import { Link, Outlet } from "react-router-dom";
 import { useState } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
-import { RiHeartLine, RiHeartFill } from "react-icons/ri";
 import {
   BsSkipBackwardFill,
   BsSkipForwardFill,
@@ -32,9 +31,6 @@ import {
 import Eminem from "./Eminem.png";
 import VolumeSlider from "./VolumeSlider";
 import TrackSlider from "./TrackSlider";
-import photo from "./playlist.jpg";
-import Home from "../SidebarPages/Home";
-import Search from "../SidebarPages/Search";
 export default function Layout() {
   const [volumeValue, setVolumeValue] = useState(50);
 
